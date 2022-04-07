@@ -1,0 +1,11 @@
+{
+  "author": "Dmitry Berezovsky",
+  "back": false,
+  "exclude": "",
+  "include": "*.py",
+  "license": "gpl3",
+  "program": "Lagring - convenience tool for data backup",
+  "short": "Lagring - convenience tool for data backup",
+  "single": true,
+  "year": "2022"
+}
