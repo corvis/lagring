@@ -6,7 +6,7 @@ SHELL := /bin/bash
 PYPI_API_KEY :=
 PYPI_REPOSITORY_URL :=
 ALPHA_VERSION :=
-SRC_ROOT := ./src/lagring
+SRC_ROOT := ./src/lagringbkp
 PYTHON := python3
 
 .DEFAULT_GOAL := pre_commit
@@ -96,10 +96,10 @@ docker:
 	@( \
        set -e; \
        if [ -z $(TAG) ]; then TAG="dev"; echo "Missing TAG argument defaulting to $$TAG"; fi; \
-       echo "Building docker image lagring:$$TAG..."; \
+       echo "Building docker image lagringbkp:$$TAG..."; \
        VERSION=`development/get-version.sh`; \
        RELEASE_DATE=`TZ="Europe/Kiev" date +%Y-%m-%d`; \
-       docker build -t lagring:$$TAG --build-arg "VERSION=$$VERSION" --build-arg "RELEASE_DATE=$$RELEASE_DATE" . ; \
+       docker build -t lagringbkp:$$TAG --build-arg "VERSION=$$VERSION" --build-arg "RELEASE_DATE=$$RELEASE_DATE" . ; \
        echo "DONE: Docker Build"; \
     )
 

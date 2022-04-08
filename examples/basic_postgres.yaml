@@ -2,10 +2,10 @@
 
 
 pipeline:
-  - name: lagring.db.postgres.PgDump
+  - name: lagringbkp.db.postgres.PgDump
     params:
       database: my_database
 
-  - name: lagrign.compress.Zip
+  - name: lagringbkp.compress.Zip
 
-  - name: lagring.transfer.BorgPush
+  - name: lagringbkp.transfer.BorgPush

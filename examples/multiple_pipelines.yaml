@@ -1,19 +1,19 @@
 
 pipelines:
   my_db_backup:
-    - name: lagring.db.postgres.PgDump
+    - name: lagringbkp.db.postgres.PgDump
       params:
         database: my_database
 
     - name: lagrign.compress.Zip
 
-    - name: lagring.transfer.BorgPush
+    - name: lagringbkp.transfer.BorgPush
 
   my_custom_pipeline:
-    - name: lagring.linux.bash.Bash
+    - name: lagringbkp.linux.bash.Bash
       params:
         command: "ps aux | grep 123"
-    - name: lagring.linux.Exec
+    - name: lagringbkp.linux.Exec
       params:
         command: asd
         args: [ "-f", 1, 2, 3 ]

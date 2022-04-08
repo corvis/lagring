@@ -1,6 +1,6 @@
 <h2 align="center">Lagring</h2>
 
-**Lagring** (Norwegian storage) is a convenience tools for managing data backups. The aim is to streamline and simplify
+**Lagring Backup** (from norwegian `lagring` - storage) is a convenience tools for managing data backups. The aim is to streamline and simplify
 the way administrator configures backup utilities, avoid tons of bash scripts and minimize the efforts for
 configuration.
 

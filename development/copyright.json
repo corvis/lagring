@@ -4,8 +4,8 @@
   "exclude": "",
   "include": "*.py",
   "license": "gpl3",
-  "program": "Lagring - convenience tool for data backup",
-  "short": "Lagring - convenience tool for data backup",
+  "program": "Lagring Backup - convenience tool for data backup",
+  "short": "Lagring Backup - convenience tool for data backup",
   "single": true,
   "year": "2022"
 }

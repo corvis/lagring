@@ -1,12 +1,12 @@
-#    Lagring - convenience tool for data backup
+#    Lagring Backup - convenience tool for data backup
 #    Copyright (C) 2022 Dmitry Berezovsky
 #    
-#    Lagring - convenience tool for data backup is free software: you can redistribute it and/or modify
+#    Lagring Backup - convenience tool for data backup is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
 #    (at your option) any later version.
 #    
-#    Lagring - convenience tool for data backup is distributed in the hope that it will be useful,
+#    Lagring Backup - convenience tool for data backup is distributed in the hope that it will be useful,
 #    but WITHOUT ANY WARRANTY; without even the implied warranty of
 #    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #    GNU General Public License for more details.
@@ -43,7 +43,7 @@ def get_version(rel_path):
 
 
 if not version_override:
-    version = get_version("lagring/__version__.py")
+    version = get_version("lagringbkp/__version__.py")
 else:
     print("Using overridden version: " + version_override)
     version = version_override
@@ -73,11 +73,11 @@ requirements_file = path.join(root_dir, 'requirements.txt')
 requirements = read_requirements(requirements_file)
 
 setup(
-    name='lagring',
+    name='lagringbkp',
     # Semantic versioning should be used:
     # https://packaging.python.org/distributing/?highlight=entry_points#semantic-versioning-preferred
     version=version,
-    description='Lagring - convenience tool for data backup',
+    description='Lagring Backup - convenience tool for data backup',
     long_description=long_description,
     url='https://github.com/corvis/lagring',
     keywords='python cli backup storage data',
@@ -111,7 +111,7 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
     ],
-    python_requires='>3.6',
+    python_requires='>3.7',
 
     # Structure
     packages=find_packages(include=['lagring', 'lagring.*', ]),
@@ -133,7 +133,7 @@ setup(
     # ],
     # entry_points={
     #     'console_scripts': [
-    #         'lagring=lagring.cli:entrypoint',
+    #         'lagring=lagringbkp.cli:entrypoint',
     #     ],
     # }
 )
