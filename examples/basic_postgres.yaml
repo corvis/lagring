@@ -1,0 +1,11 @@
+
+
+
+pipeline:
+  - name: lagring.db.postgres.PgDump
+    params:
+      database: my_database
+
+  - name: lagrign.compress.Zip
+
+  - name: lagring.transfer.BorgPush
